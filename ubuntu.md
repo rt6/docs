@@ -2,6 +2,8 @@
 
 ### Package Management (apt)
 Ubuntu 16.04 introduced apt to replace apt-get.  It now has a download progress bar :smile:
+You can also install and use Aptitude
+
 ```sh
 # Get new packages
 $ sudo apt update
@@ -11,4 +13,10 @@ $ sudo apt list --upgradeable
 
 # Download and install new packages
 $ sudo apt upgrade
+
+# show apt command line options
+$ apt help
+
+# show files/dependencies for packageName
+$ apt show <packagename>
 ```
