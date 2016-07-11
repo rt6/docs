@@ -20,3 +20,12 @@ $ apt help
 # show files/dependencies for packageName
 $ apt show <packagename>
 ```
+
+### SCP (Secure Copy)
+```sh
+# copy file to remote server using ssh config alias
+$ scp <LocalFileName> <RemoteAlias>:<RemotePath>
+
+# example
+$ scp hello.txt myServer:~/path-to-dir
+```
