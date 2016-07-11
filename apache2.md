@@ -1,0 +1,33 @@
+# APACHE2 for Ubuntu 16.04
+
+### Basic
+````sh
+$ sudo service apache2 start
+$ sudo service apache2 stop
+$ sudo service apache2 restart
+$ sudo service apache2 reload
+````
+
+### Virtual Hosts (Setup multiple web apps/domain names on one server)
+Create a `.conf` file for each web app/domain name in the `/etc/apache2/sites-available/` directory and ensure `ServerName` and `DocumentRoot` fields have a value.
+````xml
+<VirtualHost *:80>
+  ServerAdmin webmaster@subdomain.tld.com
+  DocumentRoot "/www/docs/subdomain.tld.com"
+  ServerName subdomain.tld.com
+  ErrorLog "logs/subdomain.tld.com-error_log"
+  TransferLog "logs/subdomain.tld.com-access_log"
+</VirtualHost>
+````
+
+Add and remove virtual hosts
+```sh
+# add virtual host to sites-enabled directory
+$ sudo a2ensite <conf file>
+
+# remove virtual host from sites-enabled directory
+$ sudo a2dissite <conf file>
+
+# remember to restart apache each time there are changes to virtual hosts
+$ sudo service apache restart
+```
