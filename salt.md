@@ -29,6 +29,8 @@ file_client: local
 file_roots:
   base:
     - /srv/salt/base
+  ci:
+    - /srv/salt/ci
   base_optional:
     - /srv/salt/anotherbase
 ```
