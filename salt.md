@@ -18,7 +18,7 @@ $ sudo service salt-minion stop
 $ mkdir -p /srv/salt/base
 
 # create top.sls file to store minion configs
-$ vim /srv/salt/base/top.sls
+$ vi /srv/salt/base/top.sls
 ```
 
 # Basic minion config file 
