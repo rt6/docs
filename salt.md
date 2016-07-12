@@ -21,7 +21,7 @@ $ mkdir -p /srv/salt/base
 $ vi /srv/salt/base/top.sls
 ```
 
-# Basic minion config file 
+### Basic minion config file 
 Store at path `/etc/salt/minion.d/example.conf`
 This will overwrite /etc/salt/minion
 ```yaml
@@ -33,7 +33,7 @@ file_roots:
     - /srv/salt/anotherbase
 ```
 
-# Basic top.sls file 
+### Basic top.sls file 
 Store at path `/srv/salt/base/top.sls`
 
 Each directory will have a top.sls file that contains the necessary state configurations
@@ -47,7 +47,7 @@ base:
         - git
 ```
 
-# Update minion with states
+### Update minion with states
 ```sh
 $ sudo salt-call --local state.highstate
 ```
