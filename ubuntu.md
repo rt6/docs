@@ -39,6 +39,6 @@ rsync -anv source-dir/ target-dir
 
 # if you are happy with the dry-run then proceed with rsync
 # the -a means "archive and will copy all symlinks, files, and directories
-rync -a source-dir/ target-dir
+rsync -a source-dir/ target-dir
 
 ```
