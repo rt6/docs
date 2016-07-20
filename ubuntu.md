@@ -35,10 +35,10 @@ $ scp hello.txt myServer:~/path-to-dir
 # dry run to see what files will be copied across
 # note: the "/" in source-dir is importan.  It means you want to copy contents in source-dir to target-dir
 # if you omit the "/" then source-dir will be copied to target-dir/source-dir/
-rsync -anv source-dir/ target-dir
+$ rsync -anv source-dir/ target-dir
 
 # if you are happy with the dry-run then proceed with rsync
 # the -a means "archive and will copy all symlinks, files, and directories
-rsync -a source-dir/ target-dir
+$ rsync -a source-dir/ target-dir
 
 ```
