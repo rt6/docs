@@ -22,4 +22,10 @@ $ sudo mount /dev/vdc /mnt/volume_storage/
 
 # check disk free 
 $ df -lh
+
+# update /etc/fstab so the block storate is automatically mounted when rebooted
+$ sudo vi /etc/fstab
+# add an entry that looks like this: 
+/dev/vdc        /mnt/volume_storage    auto    defaults,nofail     0       0
+
 ```
