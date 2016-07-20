@@ -22,8 +22,32 @@ show grants for 'user'@'localhost';
 ```sql
 create user 'user'@'localhost';
 grant all priviledges on <db_name>.<table> to 'user'@'localhost';
+
+# for example
+grant all priviledges on *.* to 'new_admin_user'@'localhost';
+
 flush priviledges;
 
 -- check users list
 select * from mysql.user
+```
+
+### Backup Database or Migrate Database to another Machine
+```sh
+# export databases (on source machine)
+$ mysqldump --quick [database_name] > [database_name].sql
+$ mysqldump --quick [database_name] -h [host] -u[username] -p[password] > [database_name].sql
+```
+
+```sql
+# create new databse (on target machine)
+> mysql
+> create database [new database name];
+> exit;
+```
+
+```sh
+# import database (on the target machine)
+$ mysql -h [host] -u[username] -p [new database name] < [database_name].sql
+
 ```
