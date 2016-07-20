@@ -20,7 +20,14 @@ Create a `.conf` file for each web app/domain name in the `/etc/apache2/sites-av
 </VirtualHost>
 ````
 
-Add and remove virtual hosts
+### Enable ReWrite
+```sh
+$ sudo a2enmod rewrite
+$ sudo systemctl restart apache2
+```
+
+
+### Add and remove virtual hosts
 ```sh
 # add virtual host to sites-enabled directory
 $ sudo a2ensite <conf file>
