@@ -29,3 +29,16 @@ $ scp <LocalFileName> <RemoteAlias>:<RemotePath>
 # example
 $ scp hello.txt myServer:~/path-to-dir
 ```
+
+### Rsync (Copy files to another mounted storage)
+``` sh
+# dry run to see what files will be copied across
+# note: the "/" in source-dir is importan.  It means you want to copy contents in source-dir to target-dir
+# if you omit the "/" then source-dir will be copied to target-dir/source-dir/
+rsync -anv source-dir/ target-dir
+
+# if you are happy with the dry-run then proceed with rsync
+# the -a means "archive and will copy all symlinks, files, and directories
+rync -a source-dir/ target-dir
+
+```
