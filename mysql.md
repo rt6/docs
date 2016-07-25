@@ -26,7 +26,7 @@ grant all privileges on <db_name>.<table> to 'user'@'localhost';
 # for example
 grant all privileges on *.* to 'new_admin_user'@'localhost';
 
-flush priviledges;
+flush privileges;
 
 -- check users list
 select * from mysql.user
