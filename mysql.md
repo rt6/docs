@@ -21,10 +21,10 @@ show grants for 'user'@'localhost';
 ### Create and grant new user
 ```sql
 create user 'user'@'localhost';
-grant all priviledges on <db_name>.<table> to 'user'@'localhost';
+grant all privileges on <db_name>.<table> to 'user'@'localhost';
 
 # for example
-grant all priviledges on *.* to 'new_admin_user'@'localhost';
+grant all privileges on *.* to 'new_admin_user'@'localhost';
 
 flush priviledges;
 
