@@ -65,7 +65,7 @@ Now Nerdtree has been installed and will automatically start next time you open 
 
 `I` show/hide hidden files
 
-`Ctrl w w ` switch between explorer and file
+`Ctrl w,  w ` switch between explorer and file
 
 `T` open file in new background tab
 
