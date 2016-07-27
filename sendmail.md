@@ -1,3 +1,14 @@
+# Postfix
+
+Best to use postfix instead of sendmail.
+
+```
+to be added ...
+```
+
+
+
+
 # Sendmail
 
 Some php applications use this to send emails
