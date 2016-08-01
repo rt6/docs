@@ -1,7 +1,6 @@
-# VIM
+# VIM, Plugins, Vundle
 
-### 1. Install Vundle Plugin Manager
-Also installs nerdtree 
+### 1. Install VIM Plugins using Vundle Plugin Manager
 
 ```bash
 # first backup your .vimrc and .vim directory
@@ -58,7 +57,21 @@ Don't close vim and execute these commands
 : PluginInstall
 ```
 
-Now Nerdtree has been installed and will automatically start next time you open Vim
+Note: To enable Solarize color in Ubuntu Tmux, add the following 2 lines to `.bashrc` and `.tmux.conf`
+
+~/.bashrc:
+```
+alias tmux="TERM=screen-256color-bce tmux"
+```
+
+Now exit and run `$ source ~/.bashrc`
+
+~/.tmux.conf:
+```
+set -g default-terminal "xterm-256color"`
+```
+
+Now everything should work ! :) Nerdtree (and other plugins) have been installed and will automatically start next time you open Vim
 
 ### 2. Useful NerdTree commands
 `enter` open file
