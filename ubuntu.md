@@ -42,3 +42,10 @@ $ rsync -anv source-dir/ target-dir
 $ rsync -a source-dir/ target-dir
 
 ```
+
+
+### SSH 
+Add a public key to remove server in one command 
+```sh
+$ cat ~/.ssh/id_rsa.pub | ssh user@hostname 'cat >> .ssh/authorized_keys'
+```
