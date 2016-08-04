@@ -68,8 +68,15 @@ Now exit and run `$ source ~/.bashrc`
 
 ~/.tmux.conf:
 ```
-set -g default-terminal "xterm-256color"`
+(Mac)
+set -g default-terminal "xterm-256color"
+
+(Ubuntu VIM)
+set -g default-terminal "screen-256color"
 ```
+
+
+
 
 Now everything should work ! :) Nerdtree (and other plugins) have been installed and will automatically start next time you open Vim
 
