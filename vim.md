@@ -85,10 +85,34 @@ Now everything should work ! :) Nerdtree (and other plugins) have been installed
 
 `I` show/hide hidden files
 
-`Ctrl w,  w ` switch between explorer and file
+`ctrl ww ` switch between explorer and file
 
 `T` open file in new background tab
 
 `t` open file and switch to tab
 
 `gT` or `gt` switch between tabs
+
+`ma` create new file or directory
+
+`mm` rename file or directory
+
+`md` delete name or directory
+
+`mc` copy file or directory
+
+`\` search tree like VIM
+
+`go` preview file
+
+`gi` preview file in horizontal split
+
+
+### 2. VIM NERD Commenter commands
+
+`\cc` comment line
+'\c <spacebar>` uncomment line
+`\cm` block comment
+`\cs` pretty block comment
+
+
