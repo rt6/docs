@@ -111,8 +111,11 @@ Now everything should work ! :) Nerdtree (and other plugins) have been installed
 ### 2. VIM NERD Commenter commands
 
 `\cc` comment line
-'\c <spacebar>` uncomment line
+
+`\c <spacebar>` uncomment line
+
 `\cm` block comment
+
 `\cs` pretty block comment
 
 
