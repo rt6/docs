@@ -101,11 +101,15 @@ Now everything should work ! :) Nerdtree (and other plugins) have been installed
 
 `mc` copy file or directory
 
-`\` search tree like VIM
+`\` find file like VIM
 
 `go` preview file
 
 `gi` preview file in horizontal split
+
+`ctrl d` scroll down tree
+
+`ctrl u` scroll up tree
 
 
 ### 2. VIM NERD Commenter commands
