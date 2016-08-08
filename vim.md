@@ -15,7 +15,7 @@ $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # download .vimrc
 $ cd ~
-$ wget https://raw.githubusercontent.com/rt6/dotfiles/master/.vimrc 
+$ wget -O ~/.vimrc https://raw.githubusercontent.com/rt6/dotfiles/master/.vimrc 
 
 # open vim (ignore the error messages about missing plugins)
 $ vi
