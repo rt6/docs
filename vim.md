@@ -57,10 +57,14 @@ Don't close vim and execute these commands
 : PluginInstall
 ```
 
-Note: To enable Solarize color in Ubuntu Tmux, add the following 2 lines to `.bashrc` and `.tmux.conf`
+Note: To enable Solarize color in Ubuntu Tmux and Byobu, add the following 2 lines to `.bashrc` and `.tmux.conf`
 
 ~/.bashrc:
 ```
+export TERM=screen-256color 
+
+or 
+
 alias tmux="TERM=screen-256color-bce tmux"
 ```
 
