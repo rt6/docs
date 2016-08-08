@@ -24,6 +24,6 @@ $ byobu-enable-prompt
 
 `Ctrl a` is command shortcut instead of `ctrl b` as used in tmux
  
- `F9` to choose status bar notifications (cpu temperature, memory, ip number, etc)
+ `F9` to choose status bar notifications (cpu temperature, memory, ip number, host name etc).  You can also change the command shortcut (aka escape sequence) to `ctrl b` 
  
  
