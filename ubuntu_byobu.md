@@ -1,4 +1,7 @@
 # BYOBU
+Byobu is a wrapper for Tmux and Screen.  It has a colorful status bar with useful statistics (cpu usage, ip number, memory usage, etc) and some fancy shortcuts.
+
+### Installation
 
 ```sh 
 # install
