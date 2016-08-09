@@ -51,5 +51,5 @@ base:
 
 ### Update minion with states
 ```sh
-$ sudo salt-call --local state.highstate
+$ sudo salt-call --local state.highstate -l debug
 ```
