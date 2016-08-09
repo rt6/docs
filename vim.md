@@ -39,7 +39,7 @@ alias tmux="TERM=screen-256color-bce tmux"
 
 Now exit and run `$ source ~/.bashrc`
 
-~/.tmux.conf:
+~/.tmux.conf (not needed for byobu):
 ```
 (Mac)
 set -g default-terminal "xterm-256color"
