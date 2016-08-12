@@ -117,7 +117,7 @@ $ sudo salt-key -L
 ```
 
 make sure salt-minion has started on the minion
-```
+```sh
 # -d will run daemon in background without verbose logging
 $ sudo salt-minion -d
 $ sudo salt-minion -l debug
