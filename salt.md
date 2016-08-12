@@ -155,7 +155,7 @@ network.interfaces |x | list network interfaces on minion
 grains.ls     |x | list all grains available in minion
 grains.items  |x | list grains and grain values
 grains.item <name> | sudo salt '*' grains.item roles | list the value of a grain
-
+state.highstate | sudo salt '*' state.highstate | apply salt tree (top.sls)
 
 ### Add grains to minion
 `/etc/salt/grains`:
