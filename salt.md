@@ -76,7 +76,7 @@ $ sh bootstrap-salt.sh -h
 ```
 
 ### Add the IP or DNS name of the master to the minion
-Ensure 4505 and 4506 is open on the master, and then on the minon, `/etc/salt`:
+Ensure [4505 and 4506](https://docs.saltstack.com/en/latest/topics/tutorials/firewall.html) is open on the master, and then on the minon, `/etc/salt`:
 ```
 master: <salt master ip or dns_name>
 ```
@@ -114,7 +114,8 @@ $ salt-key -a <minion-id>
 
 # now the minion will be in the accepted list (green)
 $ sudo salt-key -L
-``
+```
+
 test connection on salt-master
 ```
 $ sudo salt '*' test.ping
