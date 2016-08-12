@@ -53,3 +53,13 @@ base:
 ```sh
 $ sudo salt-call --local state.highstate -l debug
 ```
+
+# Setup Salt-master
+---
+
+### 1. Boostrap salt master using latest version from github
+Note this 2-step process allows you to inspect the sh script to ensure it is what is is !
+```sh
+curl -o bootstrap_salt.sh -L https://bootstrap.saltstack.com
+sudo sh bootstrap_salt.sh -M -N git develop
+```
