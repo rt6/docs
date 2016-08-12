@@ -120,3 +120,32 @@ test connection on salt-master
 ```
 $ sudo salt '*' test.ping
 ```
+
+If the test.ping does not return that you can try to use the following things to troubleshoot the connection
+```sh
+#first makes sure salt-minion is runnong on the minion
+$ sudo salt-minion -l debug
+
+# on the salt-minon try this to see if it returns true
+$ sudo salt-call test.ping
+
+# check ufw status and port configurations
+$ sudo ufw status
+
+# on the minion check to see if it can access port 4505 and 4506 on the master using nc and nmap
+$ nc -v -z <master_ip> 4505
+$ nc -v -z <master_ip> 4506
+$ nmap -sS -q -p 4505-4506 <master_ip>
+```
+
+
+## Useful Salt commands
+
+$sudo salt '*' <command>
+
+command | description
+--- | ---
+test.versions | return salt and other package versions on minion
+
+
+```
