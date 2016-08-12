@@ -116,6 +116,13 @@ $ salt-key -a <minion-id>
 $ sudo salt-key -L
 ```
 
+make sure salt-minion has started on the minion
+```
+# -d will run daemon in background without verbose logging
+$ sudo salt-minion -d
+$ sudo salt-minion -l debug
+```
+
 test connection on salt-master
 ```
 $ sudo salt '*' test.ping
