@@ -87,7 +87,7 @@ $ sudo salt-mionion -l debug
 ```
 
 on the salt-master
-```
+```sh
 # list fingerprints of all keys (including the master's own key, and incoming minion requests)
 $ salt-key -F master
 ```
@@ -108,7 +108,7 @@ $ salt-call key.finger --local
 ```
 
 if they both match , then you can accept the minions key and this will connect the master with the minion
-```
+```sh
 # accept minion's key
 $ salt-key -a <minion-id>
 
