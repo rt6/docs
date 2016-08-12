@@ -1,6 +1,6 @@
 # SaltStack
 
-## Setup Masterless Minion
+## 1. Setup Masterless Minion
 ---
 
 ###Boostrap minion
@@ -54,12 +54,18 @@ base:
 $ sudo salt-call --local state.highstate -l debug
 ```
 
-# Setup Salt-master
+# 2. Setup Salt-master and Salt-minion
 ---
 
-### 1. Boostrap salt master using latest version from github
+### Boostrap salt master using latest version from github
 Note this 2-step process allows you to inspect the sh script to ensure it is what is is !
 ```sh
-curl -o bootstrap_salt.sh -L https://bootstrap.saltstack.com
-sudo sh bootstrap_salt.sh -M -N git develop
+curl -o install_salt.sh -L https://bootstrap.saltstack.com
+sudo sh install_salt.sh -P -M -N git v2016.3.0rc2
+```
+
+## Bootstrap salt minion
+```sh
+curl -o install_salt.sh -L https://bootstrap.saltstack.com
+sudo sh install_salt.sh -P git v2016.3.0rc2
 ```
