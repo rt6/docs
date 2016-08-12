@@ -145,9 +145,40 @@ $ nmap -sS -q -p 4505-4506 <master_ip>
 $sudo salt '*' <command>
 ```
 
-command | description
---- | ---
-test.versions | return salt and other package versions on minion
+command | Example | description
+---     | ---     | ---
+test.versions | x       | return salt and other package versions on minion
+cmd.run       | sudo salt '*' 'df -h' |run a shell command on minion
+pkg.install    | sudo salt '*' pkg.install vim |install package on minion
+network.interfaces |x | list network interfaces on minion
+grains.ls     |x | list all grains available in minion
+grains.items  |x | list grains and grain values
+grains.item <name> | sudo salt '*' grains.item roles | list the value of a grain
 
 
+### Add grains to minion
+`/etc/salt/grains`:
+```
+roles:
+  - web-server
+  - mail-server
+  - db-server
+```
+You can also enter this in `/etc/salt/minion`:
+```
+grains:
+  roles:
+    - web-server
+    - mail-server
+```
 
+And now the top.sls file can use the below code to deploy states for minion's based on their role
+```
+{% set the_role = salt['grains.get']('roles', '') %}
+
+{% if the_node_type %}
+  'roles:{{ the_role }}':
+    - match: grain
+    - {{ the_role }}
+{% endif %}
+```
