@@ -148,6 +148,7 @@ $sudo salt '*' <command>
 command | Example | description
 ---     | ---     | ---
 test.versions | x       | return salt and other package versions on minion
+test.ping | salt -G "roles:omeka-app-*" test.ping | target minions with grains 
 cmd.run       | sudo salt '*' 'df -h' |run a shell command on minion
 pkg.install    | sudo salt '*' pkg.install vim |install package on minion
 network.interfaces |x | list network interfaces on minion
