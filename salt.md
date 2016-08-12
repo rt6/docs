@@ -60,12 +60,17 @@ $ sudo salt-call --local state.highstate -l debug
 ### Boostrap salt master using latest version from github
 Note this 2-step process allows you to inspect the sh script to ensure it is what is is !
 ```sh
-curl -o install_salt.sh -L https://bootstrap.saltstack.com
-sudo sh install_salt.sh -P -M -N git v2016.3.0rc2
+$ curl -o install_salt.sh -L https://bootstrap.saltstack.com
+$ sudo sh install_salt.sh -P -M -N git v2016.3.0rc2
 ```
 
 ## Bootstrap salt minion
 ```sh
-curl -o install_salt.sh -L https://bootstrap.saltstack.com
-sudo sh install_salt.sh -P git v2016.3.0rc2
+$ curl -o install_salt.sh -L https://bootstrap.saltstack.com
+$ sudo sh install_salt.sh -P git v2016.3.0rc2
+```
+
+### help with bootstrap script
+```sh
+$ sh bootstrap-salt.sh -h
 ```
