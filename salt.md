@@ -141,7 +141,9 @@ $ nmap -sS -q -p 4505-4506 <master_ip>
 
 ## Useful Salt commands
 
+```
 $sudo salt '*' <command>
+```
 
 command | description
 --- | ---
