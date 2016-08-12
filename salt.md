@@ -148,7 +148,7 @@ $sudo salt '*' <command>
 command | Example | description
 ---     | ---     | ---
 test.versions | x       | return salt and other package versions on minion
-test.ping | salt -G "roles:web-\*" test.ping <br> salt "\*-app-*" test.ping | target minions with grains 
+test.ping | salt -G "roles:web-\*" test.ping <br> salt "\*-app-*" test.ping | target minions using grains (-G) or just minion_id 
 cmd.run       | sudo salt '*' 'df -h' |run a shell command on minion
 pkg.install    | sudo salt '*' pkg.install vim |install package on minion
 network.interfaces |x | list network interfaces on minion
