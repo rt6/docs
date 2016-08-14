@@ -190,3 +190,14 @@ And now the top.sls file can use the below code to deploy states for minion's ba
     - {{ the_role }}
 {% endif %}
 ```
+
+
+### Upgrading Salt
+** always update the salt-master first ! **
+
+```sh
+# check version of salt running
+$sudo salt --version
+$ sudo sh bootstrap_salt.sh
+```
+
