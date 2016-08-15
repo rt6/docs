@@ -1,4 +1,4 @@
-#UFW Firewall
+#UFW Firewall (Ubuntu)
 Command line front-end for ip tables.
 
 ```sh
