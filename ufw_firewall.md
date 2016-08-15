@@ -18,6 +18,7 @@ $ sudo ufw allow ssh
 
 # port range
 $ sudo ufw allow 10000:10001/tcp
+$ sudo ufw allow 10000:10001/udp
 
 # public network or private network
 $ sudo ufw allow in on eth0 to any port 80
