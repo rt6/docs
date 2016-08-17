@@ -51,3 +51,20 @@ $ mysqldump --quick [database_name] -h [host] -u[username] -p[password] > [datab
 $ mysql -h [host] -u[username] -p [new database name] < [database_name].sql
 
 ```
+
+
+### Check mysql configs
+```sh
+# mysql daemon path
+$ which mysqld
+
+# print order that default options (mysql configs) files are read
+$ /usr/sbin/mysqld --verbose --help | grep -A 1 "Default options"
+
+> Default options are read from the following files in the given order:
+> /etc/my.cnf /etc/mysql/my.cnf ~/.my.cnf
+
+#or try
+$ mysqld --print-defaults
+
+````
