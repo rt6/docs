@@ -23,7 +23,7 @@ $ sudo mount /dev/vdc /mnt/volume_storage/
 # check disk free 
 $ df -lh
 
-# update /etc/fstab so the block storate is automatically mounted when rebooted
+# update /etc/fstab so the block storate is automatically mounted when rebooted (you might want to remove nofail, because os will not boot until timeout unless it can mount the device.  see fstab manual for more info)
 $ sudo vi /etc/fstab
 # add an entry that looks like this: 
 /dev/vdc        /mnt/volume_storage    auto    defaults,nofail     0       0
