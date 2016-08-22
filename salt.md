@@ -66,8 +66,12 @@ $ sudo sh install_salt.sh -P -M -N
 
 ## Bootstrap salt minion
 ```sh
+# 2 step
 $ curl -o install_salt.sh -L https://bootstrap.saltstack.com
 $ sudo sh install_salt.sh -P
+
+# one step
+$ curl -o install_salt.sh -L https://bootstrap.saltstack.com | sudo sh install_salt.sh -P
 ```
 
 ### help with bootstrap script
