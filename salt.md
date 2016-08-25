@@ -168,8 +168,8 @@ grains.items  |x | list grains and grain values
 grains.item <name> | sudo salt '*' grains.item roles | list the value of a grain
 state.highstate | sudo salt '*' state.highstate | apply salt tree (top.sls)
 saltutil.refresh_pillar | send new pillar values from master to minion
-pillar.items | list all pillar values (might not be freshed)
-pillar.item <pillarName> | list the value of one pillar
+pillar.items | x | list all pillar values (might not be freshed)
+pillar.item <pillarName> | x| list the value of one pillar
 
 ### Add grains to minion
 `/etc/salt/grains`:
