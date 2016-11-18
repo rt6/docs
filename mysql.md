@@ -68,3 +68,14 @@ $ /usr/sbin/mysqld --verbose --help | grep -A 1 "Default options"
 $ mysqld --print-defaults
 
 ````
+
+
+## Import and Export databses for migration
+Use MySQL `mysqldump` command line tool
+```sh
+# to export
+$ mysqldump -u mysql_user -p DATABASE_NAME > backup.sql
+ 
+# to import 
+$ mysql -u mysql_user -p DATABASE < backup.sql
+```
