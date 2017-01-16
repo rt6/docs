@@ -45,6 +45,9 @@ $ rsync -a source-dir/ target-dir
 # bwlimit limit network speed in kilobytes per second
 $ rsync -avP local-source-dir ssh_config_alias:/destination-directory --bwlimit=1000
 
+# for backup purposes, also add -x switch so you do not look at mount points (eg. directories outside of the source directory tree)
+$ rsync -avx source-dir/ target-dir
+
 ```
 
 
