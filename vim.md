@@ -30,6 +30,7 @@ Note: To enable Solarize color in Ubuntu Tmux and Byobu, add the following 2 lin
 
 ~/.bashrc:
 ```
+(Ubuntu)
 export TERM=screen-256color 
 
 or 
@@ -83,6 +84,10 @@ Now everything should work ! :) Nerdtree (and other plugins) have been installed
 `ctrl d` scroll down tree
 
 `ctrl u` scroll up tree
+
+`ctrl b` switch window
+
+`ctrl c` new window
 
 
 ### 2. VIM NERD Commenter commands
