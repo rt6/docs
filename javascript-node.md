@@ -66,6 +66,13 @@ add npm commands to scripts section of `package.json` :
   "start": "node_modules/nodemon/bin/nodemon.js -- node_modules/babel-cli/bin/babel-node.js server.js"
 }
 ```
+Note: You may want to call it "dev" instead "start".
+
+
+Now you can start the server in bash with: 
+```
+$ npm start
+```
 
 ## 4a) React Web Frontend
 
