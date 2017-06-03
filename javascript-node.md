@@ -36,11 +36,11 @@ The above will create the below structure:
     └── layout.jade
 ```
 
-# 3) Login with Passport
+## 3) Login with Passport
 
 - coming soon
 
-# 4a) React Web Frontend
+## 4a) React Web Frontend
 
 - coming soon
 
