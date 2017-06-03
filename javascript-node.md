@@ -50,7 +50,7 @@ So you use ES6 in express source code, and watch file changes which restarts exp
 install packages using devDepndencies flag (-D)
 ```sh
 
-npm i -D babel babel-cli babel-core babel-preset-es2015
+npm i -D babel babel-cli babel-core babel-preset-es2015 nodemon
 ```
 create `.babelrc`:
 ```js
