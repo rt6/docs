@@ -66,6 +66,19 @@ add npm commands to scripts section of `package.json` :
   "start": "node_modules/nodemon/bin/nodemon.js -- node_modules/babel-cli/bin/babel-node.js server.js"
 }
 ```
+
+Add code to `app.js` to tell Express to listen to port for incoming http requests:
+```js
+app.set('port', process.env.PORT || 3000);
+const server = app.listen(app.get('port'), () => {
+    const {
+        address,
+        port
+    } = server.address();
+    console.log(`Listening at http://${address}:${port}`);
+});
+```
+
 Note: You may want to call it "dev" instead "start".
 
 
