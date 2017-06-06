@@ -1,6 +1,6 @@
 # NGINX
 
-### 1) Generate CSR to get TSL certificate
+### 1) Generate Certificate Signing Request (CSR) to get TSL/HTTPS certificate
 
 Check that OpenSSL is installed:
 ```sh
