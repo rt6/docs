@@ -37,7 +37,7 @@ passport.use('local', new LocalStrategy(User.authenticate()));
 // JWT configuration
  var options = {}
    options.jwtFromRequest = ExtractJwt.fromAuthHeader();
-   options.secretOrKey = 'enter-random-secret-am21jsduoj1'
+   options.secretOrKey = 'your-jwt-secret'
 
 // Configure Passport to use JWT strategy to look up Users.
 passport.use('jwt', new JwtStrategy(options, function(jwt_payload, done) {
@@ -101,7 +101,7 @@ router.post('/login', function(req, res, next) {
         if (user) {
             var token = jwt.sign({
                 id: user._id,
-                email: user.email
+                email: user.email    //you can remove this
             }, secret);
             return res
                 .status(200)
