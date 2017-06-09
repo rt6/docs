@@ -112,3 +112,33 @@ router.post('/login', function(req, res, next) {
     })(req, res, next);
 });
 ```
+
+`./routes/index.js`:
+```js
+var express = require('express');
+var router = express.Router();
+var passport = require('passport');
+
+router.get('/protected-route', function(req, res, next) {
+    passport.authenticate('jwt', function(err, user, info) {
+        if (err) {
+            // internal server error 
+            return next(err);
+        }
+        if (!user) {
+            // no JWT or user found
+            return res.status(401).json({
+                error: 'Invalid credentials.'
+            });
+        }
+        if (user) {
+            // authentication success!
+            return res
+                .status(200)
+                .json({
+                    secret: 'hello world '
+                });
+        }
+    })(req, res, next);
+});
+```
