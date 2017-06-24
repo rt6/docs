@@ -8,7 +8,7 @@ Important note:  If your secret is known, your entire system will be compromised
 
 **Install packages**
 ```sh
-$ npm i --save-dev jsonwebtoken mongoose passport passport-jwt passport-local passport-local-mongoose cookie-parser body-parser
+$ npm i --save jsonwebtoken mongoose passport passport-jwt passport-local passport-local-mongoose cookie-parser body-parser
 ```
 
 **Setup Express**
