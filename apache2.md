@@ -38,3 +38,15 @@ $ sudo a2dissite <conf file>
 # remember to restart apache each time there are changes to virtual hosts
 $ sudo service apache restart
 ```
+
+
+### Multiple web apps using the SAME domain name (aka mapping domain name paths and the file system)
+In this example, the `domain.com` (the root /) path will use `/var/www/app1` and `domain.com/app2` will use `/opt/app2`:
+
+```
+<VirtualHost *:80>
+  DocumentRoot /var/www/app1
+  Alias "/app2" "/opt/app2"
+</VirtualHost>
+```
+
