@@ -41,7 +41,10 @@ $ sudo service apache restart
 
 
 ### Multiple web apps using the SAME domain name (aka mapping domain name paths and the file system)
-In this example, the `domain.com` (the root /) path will use files in `/var/www/app1` and `domain.com/app2` path will use files in `/var/www/app2`:
+In this example:
+`domain.com` (the root /) path will use files in `/var/www/app1`, and 
+
+`domain.com/app2` path will use files in `/var/www/app2`:
 
 ```
 <VirtualHost *:80>
