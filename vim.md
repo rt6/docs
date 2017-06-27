@@ -7,6 +7,9 @@
 $ mv ~/.vimrc ~/.vimrc_old
 $ mv ~/.vim ~/.vim_old
 
+# install vim
+$ sudo apt install vim
+
 # install git (if you don't already have it)
 $ sudo apt install git
 
