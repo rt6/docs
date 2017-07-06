@@ -79,3 +79,17 @@ $ mysqldump -u mysql_user -p DATABASE_NAME > backup.sql
 # to import 
 $ mysql -u mysql_user -p DATABASE < backup.sql
 ```
+
+
+### SSH Tunnel to access MYSQL 
+Access a remote MySQL using a local GUI/CLI (eg. MySQL Workbench)
+```sh
+# 
+ssh -L 3306:<bind-address>:3306 username@server-ip -i private-key -N
+
+# examples
+ssh -L 3306:127.0.0.1:3306 ubuntu@1.2.3.4 -i mykey -N
+
+# or if you have setup ssh config file for this host (mysqlserver1)
+ssh -L 3306:127.0.0.1:3306 mysqlserver1 -N
+```
