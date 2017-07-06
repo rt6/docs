@@ -84,7 +84,7 @@ $ mysql -u mysql_user -p DATABASE < backup.sql
 ### SSH Tunnel to access MYSQL 
 Access a remote MySQL using a local GUI/CLI (eg. MySQL Workbench)
 ```sh
-# 
+# syntax 
 ssh -L 3306:<bind-address>:3306 username@server-ip -i private-key -N
 
 # examples
