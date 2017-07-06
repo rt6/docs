@@ -85,11 +85,11 @@ $ mysql -u mysql_user -p DATABASE < backup.sql
 Access a remote MySQL using a local GUI/CLI (eg. MySQL Workbench)
 ```sh
 # syntax 
-ssh -L 3306:<bind-address>:3306 username@server-ip -i private-key -N
+ssh -L <local-port>:<bind-address>:<remote-port> username@server-ip -i private-key -N
 
-# examples
+# examples, to map remote 3306 to local 3306
 ssh -L 3306:127.0.0.1:3306 ubuntu@1.2.3.4 -i mykey -N
 
-# or if you have setup ssh config file for this host (mysqlserver1)
+# examples, same as above and using ssh config file settings for this host (mysqlserver1)
 ssh -L 3306:127.0.0.1:3306 mysqlserver1 -N
 ```
