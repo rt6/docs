@@ -103,3 +103,29 @@ INTO OUTFILE "tablename.csv"
   FIELDS TERMINATED BY ',' ENCLOSED BY '"'
   LINES TERMINATED BY "\n";
 ```
+
+### Import data into table from CSV file
+This is a bash shell command.  You can use `LOADDATA` if you need a mysql client command
+```sh
+
+```
+
+### current selected database
+Either would work.  'from dual' is a dummy table
+```sql
+select database() from dual;
+select database();
+```
+
+```
+
+### Change next Auto Increment value on Primary Key
+becareful not to cause overlapping primary keys
+```sql
+ALTER TABLE tableName AUTO_INCREMENT=310;
+```
+
+### Delete all rows in table and reset auto_increment value
+```sql
+truncate tablename;
+```
