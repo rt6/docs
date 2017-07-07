@@ -93,3 +93,13 @@ ssh -L 3306:127.0.0.1:3306 ubuntu@1.2.3.4 -i mykey -N
 # examples, same as above and using ssh config file settings for this host (mysqlserver1)
 ssh -L 3306:127.0.0.1:3306 mysqlserver1 -N
 ```
+
+
+### Export data to CSV 
+```sql
+SELECT column1, column2, column10
+FROM tablename
+INTO OUTFILE "tablename.csv"
+  FIELDS TERMINATED BY ',' ENCLOSED BY '"'
+  LINES TERMINATED BY "\n";
+```
