@@ -22,7 +22,7 @@ VBoxManage showhdinfo /Users/rtdev/VirtualBox\ VMs/my-vm/my-vm.vdi
 
 2) Now on the `Ubuntu Guest`: 
 
-Turn on VM and Use gparted on Ubuntu to modify partitions to use the additional harddisk space. 
+Turn on VM and use `gparted` on Ubuntu to modify partitions to use the additional harddisk space. 
 
 ```sh
 # install gparted (partition manager with GUI)
