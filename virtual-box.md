@@ -11,7 +11,7 @@
 cd /Applications/VirtualBox.app/Contents/MacOS/
 
 # resize vdi file.  The new size is in megabytes so 20000 = 20 GB
-VBoxManage modifyhd --resize 20000 /username/rtdev/VirtualBox\ VMs/my-vm/my-vm.vdi
+VBoxManage modifyhd --resize 20000 /Users/username/VirtualBox\ VMs/my-vm/my-vm.vdi
 
 # check that the vdi has been resized
 VBoxManage showhdinfo /Users/username/VirtualBox\ VMs/my-vm/my-vm.vdi
